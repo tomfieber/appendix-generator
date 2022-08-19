@@ -21,4 +21,4 @@ To make testing easy, I've included a test nmap XML file and a sample dehashed J
 
 ## Template
 
-The template for this tool is named 'appendix.docx' and is located in the 'Template' directory. This tool will ***technically*** work with an existing report, but right now the breached credentials will not appear properly since I had to add a custom style to the template to make the second-level bullet list work right. 
+The template for this tool is named 'template.docx' and is located in the 'Template' directory. This tool will ***technically*** work with an existing report, but make sure to update the variables in GenerateAppendix.py to conform to your report style.  
