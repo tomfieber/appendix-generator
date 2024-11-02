@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Jul 22 10:39:25 2022 as: nmap -Pn -n -&#45;script http-enum,dns-brute,hostmap-*,dns-zone-transfer,http-bigip-cookie,ssl-cert-intaddr,ssl-enum-ciphers,http-internal-ip-disclosure,smb-enum-users,smb-enum-shares,nfs-showmount,nfs-statfs,dns-update,sip-enum-users,ntp-monlist,tftp-enum,fingerprint-strings,http-default-accounts -&#45;script-args dns-brute.domain -p- -vv -O -oA nmap_scripts -&#45;open -A 10.10.203.156 -->
+<nmaprun scanner="nmap" args="nmap -Pn -n -&#45;script http-enum,dns-brute,hostmap-*,dns-zone-transfer,http-bigip-cookie,ssl-cert-intaddr,ssl-enum-ciphers,http-internal-ip-disclosure,smb-enum-users,smb-enum-shares,nfs-showmount,nfs-statfs,dns-update,sip-enum-users,ntp-monlist,tftp-enum,fingerprint-strings,http-default-accounts -&#45;script-args dns-brute.domain -p- -vv -O -oA nmap_scripts -&#45;open -A 10.10.203.156" start="1658504365" startstr="Fri Jul 22 10:39:25 2022" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1658504365"/>
+<taskend task="NSE" time="1658504373"/>
+<taskbegin task="NSE" time="1658504373"/>
+<taskend task="NSE" time="1658504373"/>
+<taskbegin task="NSE" time="1658504373"/>
+<taskend task="NSE" time="1658504373"/>
+<prescript><script id="dns-brute" output="&#xa;  DNS Brute-force hostnames: &#xa;    admin.1 - 23.221.222.250&#xa;    http.1 - 23.221.222.250&#xa;    mx0.1 - 23.221.222.250&#xa;    id.1 - 23.221.222.250&#xa;    mx1.1 - 23.221.222.250&#xa;    syslog.1 - 23.221.222.250&#xa;    mysql.1 - 23.221.222.250&#xa;    alerts.1 - 23.221.222.250&#xa;    news.1 - 23.221.222.250&#xa;    info.1 - 23.221.222.250&#xa;    test1.1 - 23.221.222.250&#xa;    alpha.1 - 23.221.222.250&#xa;    noc.1 - 23.221.222.250&#xa;    internal.1 - 23.221.222.250&#xa;    dhcp.1 - 23.221.222.250&#xa;    ap.1 - 23.221.222.250&#xa;    internet.1 - 23.221.222.250&#xa;    ns.1 - 23.221.222.250&#xa;    apache.1 - 23.221.222.250&#xa;    intra.1 - 23.221.222.250&#xa;    app.1 - 23.221.222.250&#xa;    upload.1 - 23.221.222.250&#xa;    apps.1 - 23.221.222.250&#xa;    dmz.1 - 23.221.222.250&#xa;    lab.1 - 23.221.222.250&#xa;    ns3.1 - 23.221.222.250&#xa;    vnc.1 - 23.221.222.250&#xa;    aptest.1 - 23.221.222.250&#xa;    ldap.1 - 23.221.222.250&#xa;    auth.1 - 23.221.222.250&#xa;    ops.1 - 23.221.222.250&#xa;    linux.1 - 23.221.222.250&#xa;    dns1.1 - 23.221.222.250&#xa;    backup.1 - 23.221.222.250&#xa;    local.1 - 23.221.222.250&#xa;    dns2.1 - 23.221.222.250&#xa;    web.1 - 23.221.222.250&#xa;    download.1 - 23.221.222.250&#xa;    oracle.1 - 23.221.222.250&#xa;    whois.1 - 23.221.222.250&#xa;    owa.1 - 23.221.222.250&#xa;    chat.1 - 23.221.222.250&#xa;    www.1 - 23.221.222.250&#xa;    eshop.1 - 23.221.222.250&#xa;    main.1 - 23.221.222.250&#xa;    corp.1 - 23.221.222.250&#xa;    fileserver.1 - 23.221.222.250&#xa;    crs.1 - 23.221.222.250&#xa;    firewall.1 - 23.221.222.250&#xa;    manage.1 - 23.221.222.250&#xa;    shop.1 - 23.221.222.250&#xa;    mgmt.1 - 23.221.222.250&#xa;    mirror.1 - 23.221.222.250&#xa;    db.1 - 23.221.222.250&#xa;    mobile.1 - 23.221.222.250&#xa;    demo.1 - 23.221.222.250&#xa;    sql.1 - 23.221.222.250&#xa;    git.1 - 23.221.222.250&#xa;    dev.1 - 23.221.222.250&#xa;    ssl.1 - 23.221.222.250&#xa;    helpdesk.1 - 23.221.222.250&#xa;    stage.1 - 23.221.222.250&#xa;    home.1 - 23.221.222.250&#xa;    *A: 23.202.231.169"><table key="DNS Brute-force hostnames">
+<table>
+<elem key="hostname">admin.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">http.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">mx0.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">id.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">mx1.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">syslog.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">mysql.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">alerts.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">news.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">info.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">test1.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">alpha.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">noc.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">internal.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">dhcp.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">ap.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">internet.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">ns.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">apache.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">intra.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">app.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">upload.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">apps.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">dmz.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">lab.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">ns3.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">vnc.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">aptest.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">ldap.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">auth.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">ops.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">linux.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">dns1.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">backup.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">local.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">dns2.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">web.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">download.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">oracle.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">whois.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">owa.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">chat.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">www.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">eshop.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">main.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">corp.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">fileserver.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">crs.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">firewall.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">manage.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">shop.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">mgmt.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">mirror.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">db.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">mobile.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">demo.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">sql.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">git.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">dev.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">ssl.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">helpdesk.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">stage.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<table>
+<elem key="hostname">home.1</elem>
+<elem key="address">23.221.222.250</elem>
+</table>
+<elem key="*A">23.202.231.169</elem>
+</table>
+</script></prescript><taskbegin task="SYN Stealth Scan" time="1658504373"/>
+<taskprogress task="SYN Stealth Scan" time="1658504404" percent="46.46" remaining="36" etc="1658504440"/>
+<taskend task="SYN Stealth Scan" time="1658504429" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1658504429"/>
+<taskend task="Service scan" time="1658504436" extrainfo="2 services on 1 host"/>
+<taskbegin task="Traceroute" time="1658504450"/>
+<taskend task="Traceroute" time="1658504453"/>
+<taskbegin task="NSE" time="1658504453"/>
+<taskprogress task="NSE" time="1658504484" percent="99.09" remaining="1" etc="1658504484"/>
+<taskend task="NSE" time="1658504487"/>
+<taskbegin task="NSE" time="1658504487"/>
+<taskend task="NSE" time="1658504488"/>
+<taskbegin task="NSE" time="1658504488"/>
+<taskend task="NSE" time="1658504488"/>
+<host starttime="1658504373" endtime="1658504488"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.203.156" addrtype="ipv4"/>
+<hostnames>
+<hostname name="secret.avengers.net" type="user"/>
+</hostnames>
+<ports><extraports state="closed" count="65533">
+<extrareasons reason="resets" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="ssh" product="OpenSSH" version="8.2p1 Ubuntu 4ubuntu0.4" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="http" product="Apache httpd" version="2.4.41" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.41</cpe></service><script id="http-server-header" output="Apache/2.4.41 (Ubuntu)"><elem>Apache/2.4.41 (Ubuntu)</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="35800"/>
+<osmatch name="Linux 3.1" accuracy="95" line="62708">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2" accuracy="95" line="64455">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.2</cpe></osclass>
+</osmatch>
+<osmatch name="AXIS 210A or 211 Network Camera (Linux 2.6.17)" accuracy="94" line="61606">
+<osclass type="webcam" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.17</cpe></osclass>
+<osclass type="webcam" vendor="AXIS" osfamily="embedded" accuracy="94"><cpe>cpe:/h:axis:210a_network_camera</cpe><cpe>cpe:/h:axis:211_network_camera</cpe></osclass>
+</osmatch>
+<osmatch name="ASUS RT-N56U WAP (Linux 3.4)" accuracy="93" line="8344">
+<osclass type="WAP" vendor="Asus" osfamily="embedded" accuracy="93"><cpe>cpe:/h:asus:rt-n56u</cpe></osclass>
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16" accuracy="93" line="63962">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.16</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="92" line="55173">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.39 - 3.2" accuracy="92" line="58074">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.1 - 3.2" accuracy="92" line="62728">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2 - 4.9" accuracy="92" line="65105">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.7 - 3.10" accuracy="92" line="65736">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.80%E=4%D=7/22%OT=22%CT=1%CU=35800%PV=Y%DS=4%DC=T%G=Y%TM=62DAC52&#xa;OS:8%P=aarch64-unknown-linux-gnu)SEQ(SP=106%GCD=1%ISR=10A%TI=Z%CI=Z%II=I%TS&#xa;OS:=A)OPS(O1=M506ST11NW7%O2=M506ST11NW7%O3=M506NNT11NW7%O4=M506ST11NW7%O5=M&#xa;OS:506ST11NW7%O6=M506ST11)WIN(W1=F4B3%W2=F4B3%W3=F4B3%W4=F4B3%W5=F4B3%W6=F4&#xa;OS:B3)ECN(R=Y%DF=Y%T=40%W=F507%O=M506NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=&#xa;OS:S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q&#xa;OS:=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A&#xa;OS:%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y&#xa;OS:%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T&#xa;OS:=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="1098361" lastboot="Sat Jul  9 17:35:27 2022"/>
+<distance value="4"/>
+<tcpsequence index="262" difficulty="Good luck!" values="4E7752D8,7E583E86,F612AF2,43084206,4098D9FF,A16C0D76"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="41770D93,41770E05,41770E60,41770EC5,41770F2B,41770F8F"/>
+<trace port="80" proto="tcp">
+<hop ttl="1" ipaddr="10.13.0.1" rtt="52.12"/>
+<hop ttl="4" ipaddr="10.10.203.156" rtt="192.18"/>
+</trace>
+<times srtt="187150" rttvar="3958" to="202982"/>
+</host>
+<host starttime="1658504373" endtime="1658504488"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.203.156" addrtype="ipv4"/>
+<hostnames>
+<hostname name="super-duper-secret.avengers.net" type="user"/>
+</hostnames>
+<ports><extraports state="closed" count="65533">
+<extrareasons reason="resets" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="ssh" product="OpenSSH" version="8.2p1 Ubuntu 4ubuntu0.4" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="http" product="Apache httpd" version="2.4.41" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.41</cpe></service><script id="http-server-header" output="Apache/2.4.41 (Ubuntu)"><elem>Apache/2.4.41 (Ubuntu)</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="35800"/>
+<osmatch name="Linux 3.1" accuracy="95" line="62708">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2" accuracy="95" line="64455">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.2</cpe></osclass>
+</osmatch>
+<osmatch name="AXIS 210A or 211 Network Camera (Linux 2.6.17)" accuracy="94" line="61606">
+<osclass type="webcam" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.17</cpe></osclass>
+<osclass type="webcam" vendor="AXIS" osfamily="embedded" accuracy="94"><cpe>cpe:/h:axis:210a_network_camera</cpe><cpe>cpe:/h:axis:211_network_camera</cpe></osclass>
+</osmatch>
+<osmatch name="ASUS RT-N56U WAP (Linux 3.4)" accuracy="93" line="8344">
+<osclass type="WAP" vendor="Asus" osfamily="embedded" accuracy="93"><cpe>cpe:/h:asus:rt-n56u</cpe></osclass>
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16" accuracy="93" line="63962">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.16</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="92" line="55173">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.39 - 3.2" accuracy="92" line="58074">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.1 - 3.2" accuracy="92" line="62728">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2 - 4.9" accuracy="92" line="65105">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.7 - 3.10" accuracy="92" line="65736">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.80%E=4%D=7/22%OT=22%CT=1%CU=35800%PV=Y%DS=4%DC=T%G=Y%TM=62DAC52&#xa;OS:8%P=aarch64-unknown-linux-gnu)SEQ(SP=106%GCD=1%ISR=10A%TI=Z%CI=Z%II=I%TS&#xa;OS:=A)OPS(O1=M506ST11NW7%O2=M506ST11NW7%O3=M506NNT11NW7%O4=M506ST11NW7%O5=M&#xa;OS:506ST11NW7%O6=M506ST11)WIN(W1=F4B3%W2=F4B3%W3=F4B3%W4=F4B3%W5=F4B3%W6=F4&#xa;OS:B3)ECN(R=Y%DF=Y%T=40%W=F507%O=M506NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=&#xa;OS:S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q&#xa;OS:=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A&#xa;OS:%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y&#xa;OS:%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T&#xa;OS:=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="1098361" lastboot="Sat Jul  9 17:35:27 2022"/>
+<distance value="4"/>
+<tcpsequence index="262" difficulty="Good luck!" values="4E7752D8,7E583E86,F612AF2,43084206,4098D9FF,A16C0D76"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="41770D93,41770E05,41770E60,41770EC5,41770F2B,41770F8F"/>
+<trace port="80" proto="tcp">
+<hop ttl="1" ipaddr="10.13.0.1" rtt="52.12"/>
+<hop ttl="4" ipaddr="10.10.203.156" rtt="192.18"/>
+</trace>
+<times srtt="187150" rttvar="3958" to="202982"/>
+</host>
+<taskbegin task="NSE" time="1658504488"/>
+<taskend task="NSE" time="1658504488"/>
+<taskbegin task="NSE" time="1658504488"/>
+<taskend task="NSE" time="1658504488"/>
+<taskbegin task="NSE" time="1658504488"/>
+<taskend task="NSE" time="1658504488"/>
+<runstats><finished time="1658504488" timestr="Fri Jul 22 10:41:28 2022" elapsed="122.72" summary="Nmap done at Fri Jul 22 10:41:28 2022; 1 IP address (1 host up) scanned in 122.72 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

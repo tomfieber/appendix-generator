@@ -1,0 +1,73 @@
+{
+    "balance": 5,
+    "entries": [
+        {
+            "id": "8237192894",
+            "email": "tony.stark@avengers.net",
+            "ip_address": "",
+            "username": "ironman",
+            "password": "",
+            "hashed_password": "a7d16bfc938c6ef6bfd17ffc0e506fc60a2334c1",
+            "name": "",
+            "vin": "",
+            "address": "",
+            "phone": "",
+            "database_name": "Hydra-HQ Breach"
+        },
+        {
+            "id": "4116470584",
+            "email": "thor@avengers.net",
+            "ip_address": "",
+            "username": "strongestavenger",
+            "password": "Hulk154W1mp",
+            "hashed_password": "",
+            "name": "",
+            "vin": "",
+            "address": "",
+            "phone": "",
+            "database_name": "BreachCompilation"
+        },
+        {
+            "id": "8238927213",
+            "email": "thor@avengers.net",
+            "ip_address": "",
+            "username": "pointbreak",
+            "password": "",
+            "hashed_password": "39d082eaf3c31e052d0c98f755191496cc290975",
+            "name": "",
+            "vin": "",
+            "address": "",
+            "phone": "",
+            "database_name": "Asgard"
+        },
+        {
+            "id": "8658619945",
+            "email": "natasha.romanoff@avengers.net",
+            "ip_address": "",
+            "username": "",
+            "password": "",
+            "hashed_password": "445ca16847aaf5128b06a875bfb29081",
+            "name": "Nat",
+            "vin": "",
+            "address": "",
+            "phone": "",
+            "database_name": "SHIELD Dump"
+        },
+        {
+            "id": "3037388742",
+            "email": "bruce.banner@avengers.net",
+            "ip_address": "",
+            "username": "theotherguy",
+            "password": "L0k1154Punyg0d",
+            "hashed_password": "",
+            "name": "",
+            "vin": "",
+            "address": "",
+            "phone": "",
+            "database_name": "Sakaar"
+        }
+    ],
+    "success": true,
+    "took": "177µs",
+    "total": 46
+}
